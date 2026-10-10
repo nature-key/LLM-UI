@@ -24,11 +24,7 @@ const router = createRouter({
           name: 'space-apps-list',
           component: () => import('@/views/space/apps/ListView.vue'),
         },
-        {
-          path: 'space/apps/:app_id',
-          name: 'space-apps-detail',
-          component: () => import('@/views/space/apps/DetailView.vue'),
-        },
+
       ],
     },
     {
@@ -39,6 +35,11 @@ const router = createRouter({
           path: 'auth/login',
           name: 'auth-login',
           component: () => import('@/views/auth/LoginView.vue'),
+        },
+        {
+          path: 'space/apps/:app_id',
+          name: 'space-apps-detail',
+          component: () => import('@/views/space/apps/DetailView.vue'),
         },
       ],
     },
